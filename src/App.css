@@ -1,0 +1,96 @@
+/* Body - First Color Theme (Deep Blue Purple) */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Container - Second Color Theme (Glass Transparent) */
+.main-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 450px;
+}
+
+/* Counter Display */
+h1 {
+  font-size: 4.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Premium Buttons */
+button {
+  padding: 16px 28px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 90px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Button Colors with Gradient */
+.Decrease {
+  background: linear-gradient(145deg, #008da0, #1f2020);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.Increase {
+  background: linear-gradient(145deg, #008da0, #1f2020);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.Reset {
+  background: linear-gradient(145deg, #008da0, #1f2020);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hover Effects */
+button:hover:not(:disabled) {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Disabled State */
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none;
+}
